@@ -4,6 +4,9 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  mounted() {
+    this.$welcome('to my new page!')
+  }
 }
 </script>
