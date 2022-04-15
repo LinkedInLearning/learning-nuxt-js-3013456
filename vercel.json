@@ -2,7 +2,8 @@
   "builds": [
     {
       "src": "nuxt.config.js",
-      "use": "@nuxt/vercel-builder"
+      "use": "@nuxtjs/vercel-builder",
+      "config": {}
     }
   ]
 }
