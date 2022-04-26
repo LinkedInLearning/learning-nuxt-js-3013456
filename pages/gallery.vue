@@ -12,7 +12,16 @@
         v-for="(image, index) in images"
         :key="`image-${index}`"
       >
-        <img :src="image.url_small_size" :alt="image.title">
+        <nuxt-img
+          :src="image.url_small_size"
+          :alt="image.title"
+          width="300"
+          height="200"
+          fit="cover"
+          format="webp"
+          quality="90"
+          loading="lazy"
+        />
         <p>{{ image.description }}</p>
       </div>
     </section>

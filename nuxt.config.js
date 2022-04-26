@@ -38,8 +38,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/http'
+    '@nuxt/http',
+    '@nuxt/image'
   ],
+
+  image: {
+    domains: ['pixelford.com']
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
